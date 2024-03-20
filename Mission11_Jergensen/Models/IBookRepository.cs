@@ -1,6 +1,6 @@
 namespace Mission11_Jergensen.Models;
 
-public class IBookRepository
+public interface IBookRepository
 {
     public IQueryable<Book> Books { get;   }
 }

@@ -1,0 +1,18 @@
+@model Book
+
+<div class="card m-1 p-1">
+    <div class="row">
+        <div class="col"> <!-- This column will take the maximum available space -->
+            <h4 class="text-start">@Model.Title</h4> <!-- Align the title to the start (left) -->
+        </div>
+        <div class="col-auto"> <!-- This column will take the minimum required space -->
+            <span class="badge rounded-pill bg-primary text-white"><small>$@Model.Price</small></span>
+        </div>
+    </div>
+    <ul>
+        <li>Author: @Model.Author</li>
+        <li>Publisher: @Model.Publisher</li>
+        <li>Category: @Model.Category</li>
+        <li>PageCount: @Model.PageCount</li>
+    </ul>
+</div>
